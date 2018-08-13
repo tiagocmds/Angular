@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+/*export class AppComponent {
   photos: Object[] = []
   constructor(http: HttpClient){
     
@@ -15,6 +15,23 @@ export class AppComponent {
         photos => this.photos = photos
 
 
+    );
+    
+  }
+}*/
+export class AppComponent {
+  agregados: Object[] = []
+  constructor(http: HttpClient){
+    /*agregados => {this.agregados = agregados;
+      console.log(agregados);
+      }*/
+   
+    http.get<Object[]>("https://servicodados.ibge.gov.br/api/v3/agregados").subscribe(
+      dados => this.agregados = dados,
+
+     
+     
+      erro => console.log(erro)
     );
     
   }

@@ -1,1 +1,4 @@
-<ca-photo *ngFor="let photo of photos"  [url]="photo.url"></ca-photo>
+<h1>Índices IBGE</h1>
+<ol>
+<ca-agregado *ngFor="let agregado of agregados"  [indiceIbge]="agregado"></ca-agregado>
+</ol>

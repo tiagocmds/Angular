@@ -1,0 +1,13 @@
+<li>
+    {{indiceIbge.id}}
+    <ol>
+        <li>
+                {{indiceIbge.nome}}
+                <ul>
+                    <li *ngFor="let agregado of indiceIbge.agregados">
+                            Id:  {{agregado.id}}<br> Nome:  {{agregado.nome}}
+                    </li>
+                </ul>
+        </li>
+    </ol>
+</li>

@@ -9,6 +9,7 @@ import { CursosModule } from './cursos/cursos.module';
 import { DataBindComponent } from './data-bind/data-bind.component';
 import { PhotosModule } from './photos/photos.module';
 import { CervejaModule } from './bebidas/bebidas.module';
+import { AgregadosModule } from './agregados/agregados.module';
 
 
 
@@ -24,7 +25,8 @@ import { CervejaModule } from './bebidas/bebidas.module';
     BrowserModule,
     PhotosModule,
     CervejaModule,
-    HttpClientModule
+    HttpClientModule,
+    AgregadosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
