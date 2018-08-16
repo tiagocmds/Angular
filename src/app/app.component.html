@@ -1,4 +1,10 @@
-<h1>Índices IBGE</h1>
+<!--<h1>Índices IBGE</h1>
 <ol>
 <ca-agregado *ngFor="let agregado of agregados"  [indiceIbge]="agregado"></ca-agregado>
-</ol>
+</ol>-->
+<!--<ul><ca-estado *ngFor="let estado of estados" [listaestados]="estado"></ca-estado></ul>-->
+<h1>Indice de Municipios</h1><br>
+<div class="accordion" id="accordionExample">
+    <ca-municipio *ngFor="let municipio of municipios" [municipio]="municipio"></ca-municipio>
+  </div>
+

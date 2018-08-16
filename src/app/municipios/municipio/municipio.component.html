@@ -1,0 +1,49 @@
+<!--<li><b>{{listaMunicipio.nome}}</b>
+    <ul>
+        <li>Micro Regiao: {{listaMunicipio.microrregiao.nome}}</li>
+        <li>Meso Regiao: {{listaMunicipio.microrregiao.mesorregiao.nome}}</li>
+        <li>UF: {{listaMunicipio.microrregiao.mesorregiao.UF.sigla}}</li>
+        <li>Regiao: {{listaMunicipio.microrregiao.mesorregiao.UF.regiao.nome}}</li>
+    </ul>
+</li>-->
+    <!--<div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            {{listaMunicipio.nome}}
+          </button>
+        </h5>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+            Micro Regiao: {{listaMunicipio.microrregiao.nome}}<br>
+            Meso Regiao: {{listaMunicipio.microrregiao.mesorregiao.nome}}<br>
+            UF: {{listaMunicipio.microrregiao.mesorregiao.UF.sigla}}<br>
+            Regiao: {{listaMunicipio.microrregiao.mesorregiao.UF.regiao.nome}}<br>
+        </div>
+      </div>
+    </div>-->
+
+    <div class="card">
+      <div class="card-header" id="head{{municipio.id}}">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" [attr.data-target]="'#collapsehead'+municipio.id" aria-expanded="false" [attr.aria-controls]="'collapsehead'+municipio.id">
+            {{municipio.nome}}
+          </button>
+        </h5>
+      </div>
+  
+      <div id="collapsehead{{municipio.id}}" class="collapse" [attr.aria-labelledby]="'head'+municipio.id" data-parent="#accordionExample">
+        <div class="card-body">
+            Micro Regiao: {{municipio.microrregiao.nome}}<br>
+            Meso Regiao: {{municipio.microrregiao.mesorregiao.nome}}<br>
+            UF: {{municipio.microrregiao.mesorregiao.UF.sigla}}<br>
+            Regiao: {{municipio.microrregiao.mesorregiao.UF.regiao.nome}}<br>
+        </div>
+      </div>
+    </div>
+
+ 
+
+  

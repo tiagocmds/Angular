@@ -10,6 +10,8 @@ import { DataBindComponent } from './data-bind/data-bind.component';
 import { PhotosModule } from './photos/photos.module';
 import { CervejaModule } from './bebidas/bebidas.module';
 import { AgregadosModule } from './agregados/agregados.module';
+import { EstadoModule } from './estados/estados.module';
+import { MunicipiosModule } from './municipios/municipios.module';
 
 
 
@@ -26,7 +28,9 @@ import { AgregadosModule } from './agregados/agregados.module';
     PhotosModule,
     CervejaModule,
     HttpClientModule,
-    AgregadosModule
+    AgregadosModule,
+    EstadoModule,
+    MunicipiosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
